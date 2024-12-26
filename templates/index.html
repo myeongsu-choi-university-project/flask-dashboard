@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Data Dashboard">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Data Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/index.css" type="text/css">
+</head>
+<body>
+    <div class="navbar-brand">Data Dashbord</div>
+    <div class="container-fluid text-center">
+
+        <div class="filter-container">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate">
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate">
+            <button id="filterButton">Apply Filter</button>
+        </div>
+
+        <div class="row">
+            <div class="card col-lg-7">
+                <div class="card-body">
+                    <div id="SalesChart"></div>
+                </div>
+            </div>
+            <div class="card col-lg-5">
+                <div class="card-body">
+                    <div id="ProductChart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card col-lg-3">
+                <div class="card-body">
+                    <div id="ReturnsChart"></div>
+                </div>
+            </div>
+            <div class="card col-lg-6">
+                <div class="card-body">
+                    <div id="SatisfactionScoreChart"></div>
+                </div>
+            </div>
+            <div class="card col-lg-3">
+                <div class="card-body">
+                    <div id="ComplaintsChart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/jquery/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/updateChart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/salesChart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/satisfactionScoreChart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/complaintsChart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/productChart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/returnsChart.js') }}"></script>
+</body>
+</html>
