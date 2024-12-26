@@ -49,7 +49,7 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-브라우저에서 `http://localhost:5000`으로 접속하여 시스템을 확인할 수 있습니다.
+브라우저에서 `http://localhost:5000`으로 접속하여 시스템을 확인할 수 있다.
 
 ## 결과 분석
 ![alt text](images/image-1.png)
